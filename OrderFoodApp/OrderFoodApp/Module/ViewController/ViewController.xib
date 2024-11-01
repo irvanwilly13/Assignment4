@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="oX5-x8-1Ju" id="xY3-0v-I1E"/>
+                <outlet property="registerButton" destination="NNg-19-6kd" id="WAe-OC-MzQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="GYt-px-bRm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="onBoard-1" translatesAutoresizingMaskIntoConstraints="NO" id="P8o-d3-fcC">
+                    <rect key="frame" x="30" y="139" width="333" height="253"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX5-x8-1Ju">
+                    <rect key="frame" x="16" y="512" width="361" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Login">
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-19-6kd">
+                    <rect key="frame" x="16" y="577" width="361" height="35"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Register">
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P8o-d3-fcC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="38c-V7-YSh"/>
+                <constraint firstItem="oX5-x8-1Ju" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="C3D-D3-vyW"/>
+                <constraint firstItem="P8o-d3-fcC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Ezx-Kf-Xyw"/>
+                <constraint firstItem="NNg-19-6kd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="G7b-0R-7zt"/>
+                <constraint firstItem="NNg-19-6kd" firstAttribute="top" secondItem="oX5-x8-1Ju" secondAttribute="bottom" constant="30" id="KZC-Ck-4Ko"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P8o-d3-fcC" secondAttribute="trailing" constant="30" id="Nss-ra-Has"/>
+                <constraint firstItem="oX5-x8-1Ju" firstAttribute="top" secondItem="P8o-d3-fcC" secondAttribute="bottom" constant="120" id="Nxt-SZ-Ol2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oX5-x8-1Ju" secondAttribute="trailing" constant="16" id="WQE-8D-6jT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NNg-19-6kd" secondAttribute="bottom" constant="206" id="YIe-dt-gEr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NNg-19-6kd" secondAttribute="trailing" constant="16" id="cgZ-mB-zbF"/>
+            </constraints>
+            <point key="canvasLocation" x="48" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="onBoard-1" width="336" height="344"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

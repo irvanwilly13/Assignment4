@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="Nf5-ug-QBv" id="IdG-HW-46O"/>
+                <outlet property="passwordField" destination="xkz-47-J61" id="cL0-A5-V2e"/>
+                <outlet property="registerButton" destination="ZLM-dq-vRr" id="IV6-5f-d5E"/>
+                <outlet property="usernameField" destination="pfJ-cS-h6G" id="uzb-fp-Shy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT8-cQ-3hp">
+                    <rect key="frame" x="16" y="74" width="361" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dbY-wE-jba"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf5-ug-QBv">
+                    <rect key="frame" x="16" y="486.66666666666669" width="361" height="40.000000000000057"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="u6b-wU-ur8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Login">
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLM-dq-vRr">
+                    <rect key="frame" x="16" y="556.66666666666663" width="361" height="142"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="his" title="Register">
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GGb-hg-2pE">
+                    <rect key="frame" x="16" y="169" width="361" height="255"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-cS-h6G" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="120"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="1QC-k6-etk"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkz-47-J61" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="135" width="361" height="120"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="Ztf-6o-pSy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="Nf5-ug-QBv" firstAttribute="top" secondItem="GGb-hg-2pE" secondAttribute="bottom" constant="62.670000000000002" id="1hR-2e-YAr"/>
+                <constraint firstItem="GGb-hg-2pE" firstAttribute="top" secondItem="jT8-cQ-3hp" secondAttribute="bottom" constant="55" id="CLR-Q4-E4h"/>
+                <constraint firstItem="GGb-hg-2pE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GYm-nU-yi5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jT8-cQ-3hp" secondAttribute="trailing" constant="16" id="J9i-kA-W14"/>
+                <constraint firstItem="ZLM-dq-vRr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JdB-4l-jqW"/>
+                <constraint firstItem="Nf5-ug-QBv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SLG-Bk-nAR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZLM-dq-vRr" secondAttribute="trailing" constant="16" id="Ufc-0o-Zz4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GGb-hg-2pE" secondAttribute="trailing" constant="16" id="Wyl-j8-rRP"/>
+                <constraint firstItem="jT8-cQ-3hp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="bma-QM-Zcn"/>
+                <constraint firstItem="ZLM-dq-vRr" firstAttribute="top" secondItem="Nf5-ug-QBv" secondAttribute="bottom" constant="30" id="i4g-Ln-EcQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nf5-ug-QBv" secondAttribute="trailing" constant="16" id="kI3-nm-DQH"/>
+                <constraint firstItem="jT8-cQ-3hp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="tsA-kA-M2U"/>
+            </constraints>
+            <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="his" width="128" height="128"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  OrderFoodApp
+
+  Created by Muhammad Farrel Al Fathir on 07/10/24.
+  
+*/
+
+// MARK: %@ mengubah menjadi nama atau variabel lain
+"title_food_app" = "Food App";
+"welcome" = "Welcome %@ in our app, your point %@";

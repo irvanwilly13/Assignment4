@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExcerciseDatePickerViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLabel" destination="rs6-9p-lxD" id="or3-BA-9kB"/>
+                <outlet property="pickerView" destination="eeg-G0-dbs" id="Fjz-A5-g1B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcl-0L-K3W">
+                    <rect key="frame" x="0.0" y="59" width="393" height="359"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-G0-dbs">
+                            <rect key="frame" x="0.0" y="98" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="LLH-KU-70v"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs6-9p-lxD">
+                            <rect key="frame" x="16" y="188" width="361" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="0O0-IQ-F7p"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    <constraints>
+                        <constraint firstItem="rs6-9p-lxD" firstAttribute="leading" secondItem="Pcl-0L-K3W" secondAttribute="leading" constant="16" id="1Gr-85-C4F"/>
+                        <constraint firstAttribute="trailing" secondItem="rs6-9p-lxD" secondAttribute="trailing" constant="16" id="3X2-rp-84g"/>
+                        <constraint firstItem="eeg-G0-dbs" firstAttribute="leading" secondItem="Pcl-0L-K3W" secondAttribute="leading" id="NKO-1f-3S2"/>
+                        <constraint firstItem="rs6-9p-lxD" firstAttribute="top" secondItem="eeg-G0-dbs" secondAttribute="bottom" constant="10" id="ca9-6F-UAG"/>
+                        <constraint firstItem="eeg-G0-dbs" firstAttribute="top" secondItem="Pcl-0L-K3W" secondAttribute="top" constant="98" id="jz4-1u-jb2"/>
+                        <constraint firstAttribute="trailing" secondItem="eeg-G0-dbs" secondAttribute="trailing" id="ouw-Qu-D1d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Pcl-0L-K3W" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jAi-W7-i1z"/>
+                <constraint firstItem="Pcl-0L-K3W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nLo-Uf-mB0"/>
+                <constraint firstItem="Pcl-0L-K3W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="y1z-3C-cNG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pcl-0L-K3W" secondAttribute="bottom" constant="400" id="zfd-Bd-Xxk"/>
+            </constraints>
+            <point key="canvasLocation" x="-5.343511450381679" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

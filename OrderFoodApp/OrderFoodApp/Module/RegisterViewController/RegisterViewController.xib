@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordField" destination="Nhs-SA-C4S" id="pIo-li-DuK"/>
+                <outlet property="passwordField" destination="T7h-jr-2qq" id="eRb-kU-roB"/>
+                <outlet property="registerButton" destination="hrP-Ra-6EQ" id="Rh5-pw-pdK"/>
+                <outlet property="usernameField" destination="MOc-zn-Kwg" id="16e-Ub-VA6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NR-jL-zBh">
+                    <rect key="frame" x="16" y="79" width="361" height="35"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-zn-Kwg" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="139" width="361" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="mJE-1e-cuC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7h-jr-2qq" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="259" width="361" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="RrL-B5-yNZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-SA-C4S" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="379" width="361" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="4py-eZ-lK8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrP-Ra-6EQ">
+                    <rect key="frame" x="16" y="607.66666666666663" width="361" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="y2f-ZJ-BsN"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Register">
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T7h-jr-2qq" secondAttribute="trailing" constant="16" id="6cf-rq-LW7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MOc-zn-Kwg" secondAttribute="trailing" constant="16" id="7IM-I0-LL8"/>
+                <constraint firstItem="MOc-zn-Kwg" firstAttribute="top" secondItem="7NR-jL-zBh" secondAttribute="bottom" constant="25" id="GJF-qv-OxP"/>
+                <constraint firstItem="Nhs-SA-C4S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Gb4-Ir-Hrx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7NR-jL-zBh" secondAttribute="trailing" constant="16" id="JIf-IJ-U8T"/>
+                <constraint firstItem="hrP-Ra-6EQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JQ7-gW-dER"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hrP-Ra-6EQ" secondAttribute="trailing" constant="16" id="M8N-uE-oCN"/>
+                <constraint firstItem="hrP-Ra-6EQ" firstAttribute="top" secondItem="Nhs-SA-C4S" secondAttribute="bottom" constant="128.66999999999999" id="MwH-ie-Mzs"/>
+                <constraint firstItem="7NR-jL-zBh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="cWD-bu-a0a"/>
+                <constraint firstItem="7NR-jL-zBh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jVd-Ey-bhj"/>
+                <constraint firstItem="MOc-zn-Kwg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lT4-5W-AnW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nhs-SA-C4S" secondAttribute="trailing" constant="16" id="mZB-TS-41F"/>
+                <constraint firstItem="Nhs-SA-C4S" firstAttribute="top" secondItem="T7h-jr-2qq" secondAttribute="bottom" constant="20" id="o1h-jm-qXt"/>
+                <constraint firstItem="T7h-jr-2qq" firstAttribute="top" secondItem="MOc-zn-Kwg" secondAttribute="bottom" constant="20" id="tEG-o8-L40"/>
+                <constraint firstItem="T7h-jr-2qq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ymW-cR-nDq"/>
+            </constraints>
+            <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

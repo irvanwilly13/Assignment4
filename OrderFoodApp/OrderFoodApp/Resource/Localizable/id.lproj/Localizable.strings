@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  OrderFoodApp
+
+  Created by Muhammad Farrel Al Fathir on 07/10/24.
+  
+*/
+"title_food_app" = "Food App";
+"welcome" = "Selamat Datang %@ di aplikasi kami, point kamu %@";
