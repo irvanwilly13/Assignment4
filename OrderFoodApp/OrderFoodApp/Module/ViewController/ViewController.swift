@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        
+        coordinator = ViewControllerCoordinator(navigationController: self.navigationController) // Inisialisasi coordinator
+                setup()
 
         
     }

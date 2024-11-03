@@ -28,8 +28,10 @@ class DetailFoodItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hidesBottomBarWhenPushed = true
         setup()
         loadData()
+        
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -39,10 +41,7 @@ class DetailFoodItemViewController: UIViewController {
     
     func hideNavigationBar() {
         self.navigationController?.isToolbarHidden = true
-        self.navigationController?.isNavigationBarHidden = true
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.isNavigationBarHidden = true
-        self.hidesBottomBarWhenPushed = false
+                self.navigationController?.isNavigationBarHidden = true
     }
     
     func setup() {
@@ -56,34 +55,34 @@ class DetailFoodItemViewController: UIViewController {
             nameLabel.text = item.name
             imgView.image = UIImage(named: item.image)
             descriptionLabel.text = item.description
-            priceLabel.text = String(item.price)
-            
+            priceLabel.text = String(format: "Rp %.2f", item.price)
         }
             
     }
+    
     @objc func actionAddToChartButton() {
+        actionTap()
         let vc = MainTabBarController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-//    @objc func actionTap() {
-//        if let foodItem = self.item {
-//            CartService.shared.addToCart(food: foodItem)
-//            let toast = Toast.default(
-//                image: UIImage(named: foodItem.image)!,
-//                title: "OK",
-//                subtitle: "\(foodItem.name) telah ditambahkan ke keranjang"
-//            )
-//            toast.show()
-//        
-//        }
-//    }
+    @objc func actionTap() {
+        if let foodItem = self.item {
+            CartService.shared.addToCart(food: foodItem)
+            let toast = Toast.default(
+                image: UIImage(named: foodItem.image)!,
+                title: "OK",
+                subtitle: "\(foodItem.name) telah ditambahkan ke keranjang"
+            )
+            toast.show()
+        
+        }
+    }
 }
 
 
 extension DetailFoodItemViewController: ToolBarViewDelegate {
     func addTapButton() {
+        let vc = DashboardViewController()
         self.navigationController?.popViewController(animated: true)
     }
-    
-    
 }

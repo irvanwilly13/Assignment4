@@ -30,12 +30,12 @@ class FoodCategoryTableViewCell: UITableViewCell {
     }
     
     func setup() {
-        let layout = CustomLayoutCollectionView()
+        let layout = UICollectionViewFlowLayout()
         collectionView.collectionViewLayout = layout
-                
+
         let nib = UINib(nibName: "FoodCategoryCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "FoodCategoryCollectionViewCell")
-        
+
         collectionView.delegate = self
         collectionView.dataSource = self
     }

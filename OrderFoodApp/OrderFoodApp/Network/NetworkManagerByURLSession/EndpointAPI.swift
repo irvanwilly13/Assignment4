@@ -30,7 +30,7 @@ enum EndpointAPI {
     func path() -> String {
         switch self {
         case .getAllMenu:
-            return "/getallmenurestaurant"
+            return "/getallmenu"
         case .posts:
             return "/posts"
         case .users:
@@ -116,9 +116,9 @@ enum EndpointAPI {
         
         switch self {
         case .getAllMenu, .login, .register, .getByCategory, .getAllHistory, .getAllProfile:
-            return Constants.baseURL + self.path()
+            return BaseConstants.base + self.path()
         default:
-            return Constants.baseURL + self.path()
+            return BaseConstants.baseURL + self.path()
         }
         
     }

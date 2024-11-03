@@ -10,6 +10,11 @@ import UIKit
 class PromoFoodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var dataPromosi: [PromotionFoodData] = [] {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,12 +42,13 @@ class PromoFoodTableViewCell: UITableViewCell {
 
 extension PromoFoodTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return dataPromosi.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PromoFoodCollectionViewCell", for: indexPath) as?  PromoFoodCollectionViewCell
-       // cell?.setup(item: categoryItems[indexPath.row].category)
+        
+        cell?.setup(image: dataPromosi[indexPath.row].image)
 
         return cell ?? UICollectionViewCell()
     }

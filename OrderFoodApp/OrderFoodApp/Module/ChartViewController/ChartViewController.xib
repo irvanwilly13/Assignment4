@@ -11,7 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartViewController" customModule="OrderFoodApp" customModuleProvider="target">
             <connections>
                 <outlet property="cartLabel" destination="isf-A5-MJp" id="Oxd-n5-vrD"/>
+                <outlet property="choosePaymentButton" destination="Pn1-n2-Rn3" id="1dS-mc-obS"/>
                 <outlet property="paymentButton" destination="8Wg-tP-HPX" id="NZF-YB-Iha"/>
+                <outlet property="paymentLabel" destination="Zxt-0e-cTC" id="dLx-CW-Qup"/>
                 <outlet property="priceLabel" destination="ONF-My-hAh" id="6Qa-b5-1xg"/>
                 <outlet property="tableView" destination="PId-rK-kJ5" id="fEg-fe-O7G"/>
                 <outlet property="toolBarView" destination="9gv-ac-2Ug" id="9f3-mw-QjD"/>
@@ -28,7 +30,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="MH3-gE-vNg">
-                    <rect key="frame" x="16" y="625" width="361" height="20.333333333333371"/>
+                    <rect key="frame" x="16" y="620" width="361" height="20.333333333333371"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7J-qL-sK8">
                             <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="20.333333333333332"/>
@@ -44,8 +46,40 @@
                         </label>
                     </subviews>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gv-ac-2Ug" customClass="ToolBarView" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="39" width="393" height="90"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="gqC-34-PG0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isf-A5-MJp">
+                    <rect key="frame" x="16" y="134" width="361" height="21.666666666666657"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="8qt-1o-jwu">
+                    <rect key="frame" x="16" y="655.33333333333337" width="361" height="34.333333333333371"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSl-n4-zw1">
+                            <rect key="frame" x="0.0" y="0.0" width="226" height="34.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn1-n2-Rn3">
+                            <rect key="frame" x="276" y="0.0" width="85" height="34.333333333333336"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="MUX-kQ-0eZ"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Choose"/>
+                        </button>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wg-tP-HPX">
-                    <rect key="frame" x="16" y="695.33333333333337" width="361" height="40"/>
+                    <rect key="frame" x="16" y="740.66666666666663" width="361" height="40"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="3H2-8S-cxX"/>
@@ -61,16 +95,9 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gv-ac-2Ug" customClass="ToolBarView" customModule="OrderFoodApp" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="39" width="393" height="90"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="gqC-34-PG0"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isf-A5-MJp">
-                    <rect key="frame" x="16" y="134" width="361" height="21.666666666666657"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-0e-cTC">
+                    <rect key="frame" x="16" y="697.66666666666663" width="361" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -80,19 +107,25 @@
             <constraints>
                 <constraint firstItem="PId-rK-kJ5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6bx-Vo-ln1"/>
                 <constraint firstItem="PId-rK-kJ5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8aW-yh-0me"/>
+                <constraint firstItem="Zxt-0e-cTC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9zB-Ek-1mc"/>
                 <constraint firstItem="9gv-ac-2Ug" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Hzm-1n-YQA"/>
+                <constraint firstItem="8Wg-tP-HPX" firstAttribute="top" secondItem="Zxt-0e-cTC" secondAttribute="bottom" constant="20" id="LgV-q1-k08"/>
+                <constraint firstItem="8qt-1o-jwu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mr1-yP-VJp"/>
                 <constraint firstItem="isf-A5-MJp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Msy-ZI-ijS"/>
                 <constraint firstItem="8Wg-tP-HPX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="QQR-aD-Evg"/>
                 <constraint firstItem="MH3-gE-vNg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="QkR-XF-75W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="isf-A5-MJp" secondAttribute="trailing" constant="16" id="RtA-rY-pe8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8qt-1o-jwu" secondAttribute="trailing" constant="16" id="TPo-xe-1KJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zxt-0e-cTC" secondAttribute="trailing" constant="16" id="UJv-OX-a95"/>
+                <constraint firstItem="8qt-1o-jwu" firstAttribute="top" secondItem="MH3-gE-vNg" secondAttribute="bottom" constant="15" id="X71-sW-EqX"/>
                 <constraint firstItem="isf-A5-MJp" firstAttribute="top" secondItem="9gv-ac-2Ug" secondAttribute="bottom" constant="5" id="XLt-ie-5Pu"/>
-                <constraint firstItem="MH3-gE-vNg" firstAttribute="top" secondItem="PId-rK-kJ5" secondAttribute="bottom" constant="20" id="aEm-CB-INI"/>
+                <constraint firstItem="Zxt-0e-cTC" firstAttribute="top" secondItem="8qt-1o-jwu" secondAttribute="bottom" constant="8" id="Xyo-PV-aXk"/>
+                <constraint firstItem="MH3-gE-vNg" firstAttribute="top" secondItem="PId-rK-kJ5" secondAttribute="bottom" constant="15" id="aEm-CB-INI"/>
                 <constraint firstItem="9gv-ac-2Ug" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-20" id="cpc-sK-0r6"/>
                 <constraint firstItem="PId-rK-kJ5" firstAttribute="top" secondItem="isf-A5-MJp" secondAttribute="bottom" constant="5" id="lQA-Sl-2OD"/>
                 <constraint firstItem="9gv-ac-2Ug" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ntQ-dD-L91"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PId-rK-kJ5" secondAttribute="bottom" constant="213" id="sol-lx-Nwu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Wg-tP-HPX" secondAttribute="trailing" constant="16" id="wae-Ox-v3t"/>
-                <constraint firstItem="8Wg-tP-HPX" firstAttribute="top" secondItem="MH3-gE-vNg" secondAttribute="bottom" constant="50" id="xVN-zc-Q7f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MH3-gE-vNg" secondAttribute="trailing" constant="16" id="zKH-tr-ZS4"/>
             </constraints>
             <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>

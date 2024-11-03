@@ -52,6 +52,13 @@
 		682189B02CB3D21100ADB1D9 /* LeftMenuBottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682189AE2CB3D21100ADB1D9 /* LeftMenuBottomSheetViewController.xib */; };
 		682F8C802CAA9B8A0079F6C5 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682F8C7E2CAA9B8A0079F6C5 /* BottomSheetViewController.swift */; };
 		682F8C812CAA9B8A0079F6C5 /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682F8C7F2CAA9B8A0079F6C5 /* BottomSheetViewController.xib */; };
+		6843B1762CD52D2800ADC543 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6843B1752CD52D2800ADC543 /* ErrorViewController.xib */; };
+		6843B1772CD52D2800ADC543 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843B1742CD52D2800ADC543 /* ErrorViewController.swift */; };
+		6843B17B2CD5318800ADC543 /* AdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6843B17A2CD5318800ADC543 /* AdsViewController.xib */; };
+		6843B17C2CD5318800ADC543 /* AdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843B1792CD5318800ADC543 /* AdsViewController.swift */; };
+		6843B1812CD7B06900ADC543 /* HistoryOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843B17F2CD7B06900ADC543 /* HistoryOrderTableViewCell.swift */; };
+		6843B1822CD7B06900ADC543 /* HistoryOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6843B1802CD7B06900ADC543 /* HistoryOrderTableViewCell.xib */; };
+		6843B1842CD7B07B00ADC543 /* ModelHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843B1832CD7B07B00ADC543 /* ModelHistory.swift */; };
 		6860B4F42CB61F8700AB0165 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6860B4F32CB61F8700AB0165 /* GoogleService-Info.plist */; };
 		6860B4F72CB620DC00AB0165 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6860B4F62CB620DC00AB0165 /* FirebaseAuth */; };
 		6860B4F92CB6277300AB0165 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860B4F82CB6277300AB0165 /* BaseViewController.swift */; };
@@ -82,6 +89,12 @@
 		686899DD2CD372F8008CB335 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686899DC2CD372F8008CB335 /* RegisterModel.swift */; };
 		686899E02CD37366008CB335 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 686899DF2CD37366008CB335 /* netfox */; };
 		686899E22CD37419008CB335 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686899E12CD37419008CB335 /* Constants.swift */; };
+		686FFAA22CD4C2A2005766E9 /* PaymentTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FFAA02CD4C2A2005766E9 /* PaymentTabBarViewController.swift */; };
+		686FFAA32CD4C2A2005766E9 /* PaymentTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686FFAA12CD4C2A2005766E9 /* PaymentTabBarViewController.xib */; };
+		68A0A8382CD4C87A00D085D2 /* SuccessPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A0A8372CD4C87A00D085D2 /* SuccessPaymentViewController.xib */; };
+		68A0A8392CD4C87A00D085D2 /* SuccessPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0A8362CD4C87A00D085D2 /* SuccessPaymentViewController.swift */; };
+		68A0A83B2CD4CA6400D085D2 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0A83A2CD4CA6400D085D2 /* DashboardViewModel.swift */; };
+		68A0A83D2CD4CA8500D085D2 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0A83C2CD4CA8400D085D2 /* BaseViewModel.swift */; };
 		68B7E5F42CACE4BD007D3104 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7E5F32CACE4BD007D3104 /* DashboardModel.swift */; };
 		68B7E5F82CACFCC9007D3104 /* DetailFoodItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B7E5F72CACFCC9007D3104 /* DetailFoodItemViewController.xib */; };
 		68B7E5F92CACFCC9007D3104 /* DetailFoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7E5F62CACFCC9007D3104 /* DetailFoodItemViewController.swift */; };
@@ -182,6 +195,13 @@
 		682189AE2CB3D21100ADB1D9 /* LeftMenuBottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuBottomSheetViewController.xib; sourceTree = "<group>"; };
 		682F8C7E2CAA9B8A0079F6C5 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		682F8C7F2CAA9B8A0079F6C5 /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		6843B1742CD52D2800ADC543 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		6843B1752CD52D2800ADC543 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
+		6843B1792CD5318800ADC543 /* AdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewController.swift; sourceTree = "<group>"; };
+		6843B17A2CD5318800ADC543 /* AdsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsViewController.xib; sourceTree = "<group>"; };
+		6843B17F2CD7B06900ADC543 /* HistoryOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderTableViewCell.swift; sourceTree = "<group>"; };
+		6843B1802CD7B06900ADC543 /* HistoryOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryOrderTableViewCell.xib; sourceTree = "<group>"; };
+		6843B1832CD7B07B00ADC543 /* ModelHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHistory.swift; sourceTree = "<group>"; };
 		6860B4F32CB61F8700AB0165 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6860B4F82CB6277300AB0165 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6860B4FA2CB6294400AB0165 /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
@@ -205,6 +225,12 @@
 		686899DA2CD372E9008CB335 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		686899DC2CD372F8008CB335 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		686899E12CD37419008CB335 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		686FFAA02CD4C2A2005766E9 /* PaymentTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentTabBarViewController.swift; path = ../../../../../Assignment3/CafeFoodOrderApp/CafeFoodOrderApp/Module/MapKitView/PaymentTabBarViewController.swift; sourceTree = "<group>"; };
+		686FFAA12CD4C2A2005766E9 /* PaymentTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PaymentTabBarViewController.xib; path = ../../../../../Assignment3/CafeFoodOrderApp/CafeFoodOrderApp/Module/MapKitView/PaymentTabBarViewController.xib; sourceTree = "<group>"; };
+		68A0A8362CD4C87A00D085D2 /* SuccessPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPaymentViewController.swift; sourceTree = "<group>"; };
+		68A0A8372CD4C87A00D085D2 /* SuccessPaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessPaymentViewController.xib; sourceTree = "<group>"; };
+		68A0A83A2CD4CA6400D085D2 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		68A0A83C2CD4CA8400D085D2 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		68B7E5F32CACE4BD007D3104 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
 		68B7E5F62CACFCC9007D3104 /* DetailFoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodItemViewController.swift; sourceTree = "<group>"; };
 		68B7E5F72CACFCC9007D3104 /* DetailFoodItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFoodItemViewController.xib; sourceTree = "<group>"; };
@@ -417,6 +443,33 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6843B1732CD52CC100ADC543 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				6843B1742CD52D2800ADC543 /* ErrorViewController.swift */,
+				6843B1752CD52D2800ADC543 /* ErrorViewController.xib */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		6843B1782CD5316700ADC543 /* AdsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6843B1792CD5318800ADC543 /* AdsViewController.swift */,
+				6843B17A2CD5318800ADC543 /* AdsViewController.xib */,
+			);
+			path = AdsViewController;
+			sourceTree = "<group>";
+		};
+		6843B17E2CD7B04600ADC543 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6843B17F2CD7B06900ADC543 /* HistoryOrderTableViewCell.swift */,
+				6843B1802CD7B06900ADC543 /* HistoryOrderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		6860B4FD2CB6379800AB0165 /* PopUP */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +503,24 @@
 				686899D82CD3723C008CB335 /* EndpointAPI.swift */,
 			);
 			path = NetworkManagerByURLSession;
+			sourceTree = "<group>";
+		};
+		686FFA9F2CD4C266005766E9 /* PaymentTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				686FFAA02CD4C2A2005766E9 /* PaymentTabBarViewController.swift */,
+				686FFAA12CD4C2A2005766E9 /* PaymentTabBarViewController.xib */,
+			);
+			path = PaymentTabBar;
+			sourceTree = "<group>";
+		};
+		68A0A8342CD4C85300D085D2 /* SuccessPayment */ = {
+			isa = PBXGroup;
+			children = (
+				68A0A8362CD4C87A00D085D2 /* SuccessPaymentViewController.swift */,
+				68A0A8372CD4C87A00D085D2 /* SuccessPaymentViewController.xib */,
+			);
+			path = SuccessPayment;
 			sourceTree = "<group>";
 		};
 		68B7E5F52CACFC1B007D3104 /* DetailFoodItemViewController */ = {
@@ -570,6 +641,7 @@
 				6860B4F82CB6277300AB0165 /* BaseViewController.swift */,
 				6860B4FA2CB6294400AB0165 /* KeyChainHelper.swift */,
 				686899E12CD37419008CB335 /* Constants.swift */,
+				68A0A83C2CD4CA8400D085D2 /* BaseViewModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -585,6 +657,8 @@
 		68EBD96A2CAA45F600AB7E02 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				6843B1782CD5316700ADC543 /* AdsViewController */,
+				68A0A8342CD4C85300D085D2 /* SuccessPayment */,
 				68FB84F02CB78DDD003AEB1D /* ExcerciseDatePickerViewController */,
 				68FB84EB2CB78324003AEB1D /* ExcerciseGestureViewController */,
 				682189A72CB3B32600ADB1D9 /* ExerciseAnimation */,
@@ -619,6 +693,8 @@
 		68EBD96C2CAA461500AB7E02 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				6843B1732CD52CC100ADC543 /* ErrorView */,
+				686FFA9F2CD4C266005766E9 /* PaymentTabBar */,
 				6860B4FD2CB6379800AB0165 /* PopUP */,
 				6864FDA92CAE6E820077F330 /* CustomInputField.swift */,
 				6864FDAB2CAE6EA30077F330 /* CustomInputField.xib */,
@@ -657,8 +733,10 @@
 		68EBD9812CAA575500AB7E02 /* HistoryOrderViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6843B17E2CD7B04600ADC543 /* Cell */,
 				68EBD9972CAA587400AB7E02 /* HistoryOrderViewController.swift */,
 				68EBD9982CAA587400AB7E02 /* HistoryOrderViewController.xib */,
+				6843B1832CD7B07B00ADC543 /* ModelHistory.swift */,
 			);
 			path = HistoryOrderViewController;
 			sourceTree = "<group>";
@@ -690,6 +768,7 @@
 				68EBD9892CAA582C00AB7E02 /* DashboardViewController.swift */,
 				68EBD98A2CAA582C00AB7E02 /* DashboardViewController.xib */,
 				68B7E5F32CACE4BD007D3104 /* DashboardModel.swift */,
+				68A0A83A2CD4CA6400D085D2 /* DashboardViewModel.swift */,
 			);
 			path = DashboardViewController;
 			sourceTree = "<group>";
@@ -817,6 +896,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				682189902CB387A900ADB1D9 /* BrownieStencil.ttf in Resources */,
+				686FFAA32CD4C2A2005766E9 /* PaymentTabBarViewController.xib in Resources */,
 				6821898E2CB387A900ADB1D9 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				6821898F2CB387A900ADB1D9 /* OpenSans-CondBold.ttf in Resources */,
 				68EBD97A2CAA4B2F00AB7E02 /* LoginViewController.xib in Resources */,
@@ -830,9 +910,11 @@
 				68CF2ABE2CABA7E3008A05F7 /* FoodCategoryTableViewCell.xib in Resources */,
 				6864FDAC2CAE6EA30077F330 /* CustomInputField.xib in Resources */,
 				68FB84EE2CB7833F003AEB1D /* ExcerciseGestureViewController.xib in Resources */,
+				6843B1762CD52D2800ADC543 /* ErrorViewController.xib in Resources */,
 				68EBD95B2CAA45A100AB7E02 /* Assets.xcassets in Resources */,
 				6864FDB02CAE88A90077F330 /* ToolBarView.xib in Resources */,
 				682189982CB387A900ADB1D9 /* OpenSansBold.ttf in Resources */,
+				68A0A8382CD4C87A00D085D2 /* SuccessPaymentViewController.xib in Resources */,
 				68CF2ACA2CABB825008A05F7 /* FoodDetailItemCollectionViewCell.xib in Resources */,
 				6814FAAE2CAFC0DD0037DFF8 /* DetailShoesItemViewController.xib in Resources */,
 				68CF2AC62CABB4C1008A05F7 /* FoodDetailItemTableViewCell.xib in Resources */,
@@ -841,6 +923,7 @@
 				6814FA9D2CAF90330037DFF8 /* ShoesCategoryCollectionViewCell.xib in Resources */,
 				6821895E2CB3798B00ADB1D9 /* Localizable.strings in Resources */,
 				68EBD95E2CAA45A100AB7E02 /* Base in Resources */,
+				6843B1822CD7B06900ADC543 /* HistoryOrderTableViewCell.xib in Resources */,
 				68EBD9762CAA47B600AB7E02 /* ViewController.xib in Resources */,
 				68B7E6172CAD3FE5007D3104 /* ChartTableViewCell.xib in Resources */,
 				68EBD9592CAA45A000AB7E02 /* Base in Resources */,
@@ -860,6 +943,7 @@
 				6814FA992CAF8EDD0037DFF8 /* ShoesCategoryTableViewCell.xib in Resources */,
 				6821899A2CB387A900ADB1D9 /* OpenSans-LightItalic.ttf in Resources */,
 				682189972CB387A900ADB1D9 /* OpenSans-SemiBold.ttf in Resources */,
+				6843B17B2CD5318800ADC543 /* AdsViewController.xib in Resources */,
 				682189A12CB39C4500ADB1D9 /* wearethechampion.mp3 in Resources */,
 				6821897B2CB3855E00ADB1D9 /* BlackNorth.otf in Resources */,
 				68B7E6122CAD3423007D3104 /* TodoListViewController.xib in Resources */,
@@ -887,6 +971,9 @@
 				6814FAA42CAFA28D0037DFF8 /* ShoesDetailItemTableViewCell.swift in Sources */,
 				6864FDA82CAE484E0077F330 /* AdsTableViewCell.swift in Sources */,
 				68CF2AC92CABB825008A05F7 /* FoodDetailItemCollectionViewCell.swift in Sources */,
+				6843B1842CD7B07B00ADC543 /* ModelHistory.swift in Sources */,
+				686FFAA22CD4C2A2005766E9 /* PaymentTabBarViewController.swift in Sources */,
+				6843B17C2CD5318800ADC543 /* AdsViewController.swift in Sources */,
 				6860B4F92CB6277300AB0165 /* BaseViewController.swift in Sources */,
 				6814FA932CAF8ACE0037DFF8 /* ExcerciseViewController.swift in Sources */,
 				68B7E6082CAD1FEA007D3104 /* PromoFoodTableViewCell.swift in Sources */,
@@ -896,12 +983,14 @@
 				682F8C802CAA9B8A0079F6C5 /* BottomSheetViewController.swift in Sources */,
 				6864FDB62CAE9CE60077F330 /* ExtensionUIView.swift in Sources */,
 				68EBD9792CAA4B2F00AB7E02 /* LoginViewController.swift in Sources */,
+				68A0A83B2CD4CA6400D085D2 /* DashboardViewModel.swift in Sources */,
 				68FB84EF2CB7833F003AEB1D /* ExcerciseGestureViewController.swift in Sources */,
 				68EBD98B2CAA582C00AB7E02 /* DashboardViewController.swift in Sources */,
 				6860B4FB2CB6294400AB0165 /* KeyChainHelper.swift in Sources */,
 				68EBD9A32CAA754800AB7E02 /* ChartModel.swift in Sources */,
 				682189682CB37FD700ADB1D9 /* Ext+UIFont.swift in Sources */,
 				686899C42CD36C07008CB335 /* ViewControllerCoordinator.swift in Sources */,
+				6843B1812CD7B06900ADC543 /* HistoryOrderTableViewCell.swift in Sources */,
 				686899E22CD37419008CB335 /* Constants.swift in Sources */,
 				68B7E60E2CAD3354007D3104 /* ChartService.swift in Sources */,
 				686899DB2CD372E9008CB335 /* LoginModel.swift in Sources */,
@@ -935,12 +1024,15 @@
 				682189AA2CB3B35600ADB1D9 /* AnimationViewController.swift in Sources */,
 				686899DD2CD372F8008CB335 /* RegisterModel.swift in Sources */,
 				68B7E60C2CAD20BB007D3104 /* PromoFoodCollectionViewCell.swift in Sources */,
+				68A0A8392CD4C87A00D085D2 /* SuccessPaymentViewController.swift in Sources */,
 				6864FDAA2CAE6E820077F330 /* CustomInputField.swift in Sources */,
 				686899C62CD36C37008CB335 /* RegisterCoordinator.swift in Sources */,
 				68EBD9522CAA45A000AB7E02 /* AppDelegate.swift in Sources */,
 				6864FDB22CAE8B510077F330 /* EmptyView.swift in Sources */,
 				68EBD98F2CAA584200AB7E02 /* ProfileViewController.swift in Sources */,
+				68A0A83D2CD4CA8500D085D2 /* BaseViewModel.swift in Sources */,
 				68EBD9542CAA45A000AB7E02 /* SceneDelegate.swift in Sources */,
+				6843B1772CD52D2800ADC543 /* ErrorViewController.swift in Sources */,
 				6814FA9C2CAF90330037DFF8 /* ShoesCategoryCollectionViewCell.swift in Sources */,
 				6814FA9F2CAF92800037DFF8 /* ExcerciseModel.swift in Sources */,
 			);
